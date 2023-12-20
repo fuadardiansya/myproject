@@ -162,7 +162,7 @@ st.markdown('''
 st.markdown('''
     :blue[4 adalah Heavy Rain + Ice Pallets + Thunderstorm + Mist, Snow + Fog].''')
 
-kal4 = '''Berdasarkan diagram box plot diatas, jumlah sewa sepeda harian meningkat 
+kal4 = '''Berdasarkan diagram bar diatas, jumlah sewa sepeda harian meningkat 
 pada 1 adalah Clear, Few clouds, Partly cloudy, Partly cloudy
 '''
 st.markdown(kal4)
@@ -180,7 +180,7 @@ st.pyplot(fig)
 
 st.markdown('''
     :rainbow[if day is neither weekend nor holiday is 1, otherwise is 0.].''')
-kal5 = '''Berdasarkan diagram box plot diatas, jumlah sewa sepeda harian lebih banyak 
+kal5 = '''Berdasarkan diagram bar diatas, jumlah sewa sepeda harian lebih banyak 
 dilakukan pada workingday daripada holiday
 '''
 st.markdown(kal5)
