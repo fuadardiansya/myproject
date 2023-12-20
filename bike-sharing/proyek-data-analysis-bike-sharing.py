@@ -86,8 +86,11 @@ correlation = days_hours_df[numerical_columns].corr()
 print(correlation)
 
 #Visualization & Explanatory Analysis
+st.header('Dashboard Proyek Data Analysis - Bike Sharing')
+
 #1.Bagaimana intensitas jumlah sewa sepeda harian setiap musim(season)?
-#Seaborn_bar
+st.subheader('Bagaimana intensitas jumlah sewa sepeda harian setiap musim(season)?')
+
 fig, ax = plt.subplots(figsize=(10,5))
 sns.barplot(data=days_hours_df, x="season_daily", y='cnt_daily', ax=ax)
 ax.set(title='INTENSITAS JUMLAH SEWA SEPEDA HARIAN SETIAP MUSIM')
@@ -97,7 +100,8 @@ plt.show()
 st.pyplot(fig)
 
 #2.Bagaimana intensitas jumlah sewa sepeda harian setiap tahun(year)?
-#Seaborn_bar
+st.subheader('Bagaimana intensitas jumlah sewa sepeda harian setiap tahun(year)?')
+
 fig, ax = plt.subplots(figsize=(10,5))
 sns.barplot(data=days_hours_df, x="yr_daily", y='cnt_daily', ax=ax)
 ax.set(title='INTENSITAS JUMLAH SEWA SEPEDA PERTAHUN')
@@ -107,7 +111,8 @@ plt.show()
 st.pyplot(fig)
 
 #3.Bagaimana intensitas jumlah sewa sepeda harian setiap bulan(month)?
-#Seaborn_bar
+st.subheader('Bagaimana intensitas jumlah sewa sepeda harian setiap bulan(month)?')
+
 fig, ax = plt.subplots(figsize=(10,5))
 sns.barplot(data=days_hours_df, x="mnth_daily", y='cnt_daily', ax=ax)
 ax.set(title='INTENSITAS JUMLAH SEWA SEPEDA PERBULAN')
@@ -117,7 +122,8 @@ plt.show()
 st.pyplot(fig)
 
 #4.Bagaimana dampak cuaca(weathersit) terhadap jumlah sewa sepeda harian?
-#Seaborn_bar
+st.subheader('Bagaimana dampak cuaca(weathersit) terhadap jumlah sewa sepeda harian?')
+
 fig, ax = plt.subplots(figsize=(10,5))
 sns.barplot(data=days_hours_df, x="weathersit_daily", y='cnt_daily', ax=ax)
 ax.set(title='DAMPAK CUACA PADA JUMLAH SEWA SEPEDA HARIAN')
@@ -127,7 +133,8 @@ plt.show()
 st.pyplot(fig)
 
 #5.Bagaimana perbedaan jumlah sepeda harian antara hari kerja(workingday) dan hari libur(holiday)?
-#Seaborn_boxplot
+st.subheader('Bagaimana perbedaan jumlah sepeda harian antara hari kerja(workingday) dan hari libur(holiday)?')
+
 fig, ax = plt.subplots(figsize=(10,5))
 sns.barplot(data=days_hours_df, x="workingday_daily", y='cnt_daily', ax=ax)
 ax.set(title='PERBEDAAN JUMLAH SEWA SEPEDA HARIAN ANTARA WORKINGDAY DAN HOLIDAY')
