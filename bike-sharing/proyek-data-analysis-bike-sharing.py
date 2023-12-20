@@ -61,9 +61,6 @@ hours_df.describe(include="all")
 days_hours_df.sample(5)
 days_hours_df.describe(include="all")
 
-days_hours_df.instant_daily.is_unique
-days_hours_df.instant_daily.duplicated
-
 days_hours_df.groupby(by="season_hourly").agg({
     "workingday_hourly": "count", #Menjumlahkan penyewa pada hari kerja berdasarkan musim
     "windspeed_hourly": ["max", "min", "mean", lambda x: x.max() - x.min()] #Membuat fungsi kustom untuk range
