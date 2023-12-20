@@ -104,7 +104,7 @@ st.markdown('''
 kal1 = ''' Berdasarkan diagram bar diatas, rata-rata intensitas jumlah sewa sepeda harian paling tinggi 
 dilakukan pada musim gugur (Fall) dan yang paling rendah dilakukan pada musim semi (Springer)
 '''
-st.markdown(kal)
+st.markdown(kal1)
 
 #2.Bagaimana intensitas jumlah sewa sepeda harian setiap tahun(year)?
 st.subheader('Bagaimana intensitas jumlah sewa sepeda harian setiap tahun(year)?')
