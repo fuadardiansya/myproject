@@ -100,7 +100,7 @@ plt.show()
 st.pyplot(fig)
 
 st.markdown('''
-    :red[1 adalah Springer], :orange[2 adalah Summer]. :green[3 adalah Fall], :blue[4 adalah Winter].''')
+    :red[1 adalah Springer], :orange[2 adalah Summer], :green[3 adalah Fall], :blue[4 adalah Winter].''')
 kal1 = ''' Berdasarkan diagram bar diatas, rata-rata intensitas jumlah sewa sepeda harian paling tinggi 
 dilakukan pada musim gugur (Fall) dan yang paling rendah dilakukan pada musim semi (Springer)
 '''
@@ -118,7 +118,7 @@ plt.show()
 st.pyplot(fig)
 
 st.markdown('''
-    :red[0 adalah 2011] :orange[1 adalah 2012].''')
+    :red[0 adalah 2011], :orange[1 adalah 2012].''')
 kal2 = '''Berdasarkan diagram bar diatas, rata-rata intensitas jumlah sewa sepeda harian 
 paling tinggi dilakukan pada tahun 2012
 '''
@@ -153,6 +153,20 @@ plt.ylabel("Jumlah Sewa Sepeda Harian")
 plt.show()
 st.pyplot(fig)
 
+st.markdown('''
+    :red[1 adalah Clear, Few clouds, Partly cloudy, Partly cloudy].''')
+st.markdown('''
+    :orange[2 adalah Mist + Cloudy, Mist + Broken clouds, Mist + Few clouds, Mist].''')
+st.markdown('''
+    :green[3 adalah Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rain + Scattered clouds].''')
+st.markdown('''
+    :yellow[4 adalah Heavy Rain + Ice Pallets + Thunderstorm + Mist, Snow + Fog].''')
+
+kal4 = '''Berdasarkan diagram box plot diatas, jumlah sewa sepeda harian meningkat 
+pada 1 adalah Clear, Few clouds, Partly cloudy, Partly cloudy
+'''
+st.markdown(kal4)
+
 #5.Bagaimana perbedaan jumlah sepeda harian antara hari kerja(workingday) dan hari libur(holiday)?
 st.subheader('Bagaimana perbedaan jumlah sepeda harian antara hari kerja(workingday) dan hari libur(holiday)?')
 
@@ -163,6 +177,13 @@ plt.xlabel("Workingday")
 plt.ylabel("Jumlah Sewa Sepeda Harian")
 plt.show()
 st.pyplot(fig)
+
+st.markdown('''
+    :rainbow[if day is neither weekend nor holiday is 1, otherwise is 0.].''')
+kal5 = '''Berdasarkan diagram box plot diatas, jumlah sewa sepeda harian lebih banyak 
+dilakukan pada workingday daripada holiday
+'''
+st.markdown(kal5)
 
 st.caption('Copyright © Fuad Hidayat Ardiansya 2023')
 
