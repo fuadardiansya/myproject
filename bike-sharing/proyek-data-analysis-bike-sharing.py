@@ -100,8 +100,8 @@ plt.show()
 st.pyplot(fig)
 
 st.markdown('''
-    :red[Berdasarkan diagram bar diatas, rata-rata intensitas jumlah sewa sepeda harian paling tinggi dilakukan pada musim gugur (Fall) dan yang paling rendah dilakukan pada musim semi (Springer)
-].''')
+    :red[1.Springer] :orange[2.Summer] :green[3.Fall] :blue[4.Winter].''')
+st.text('Berdasarkan diagram bar diatas, rata-rata intensitas jumlah sewa sepeda harian paling tinggi dilakukan pada musim gugur (Fall) dan yang paling rendah dilakukan pada musim semi (Springer)')
 
 #2.Bagaimana intensitas jumlah sewa sepeda harian setiap tahun(year)?
 st.subheader('Bagaimana intensitas jumlah sewa sepeda harian setiap tahun(year)?')
