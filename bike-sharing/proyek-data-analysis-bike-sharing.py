@@ -54,10 +54,9 @@ hours_df.describe()
 days_hours_df.describe()
 
 #Mendefinisikan fungsi yang akan digunakan
-def range(series):
-    return series.max() - series.min()
-
-days_hours_df.describe(include="all")
+#def range(series):
+#   return series.max() - series.min()
+#days_hours_df.describe(include="all")
 
 days_hours_df.groupby(by="season_hourly").agg({
     "workingday_hourly": "count", #Menjumlahkan penyewa pada hari kerja berdasarkan musim
