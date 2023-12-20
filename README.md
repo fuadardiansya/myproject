@@ -10,4 +10,5 @@ pip install numpy pandas scipy matplotlib seaborn jupyter streamlit
 ## Run steamlit app
 ```
 streamlit run proyek-data-analysis-bike-sharing.py
+https://dash-bike-sharing.streamlit.app/
 ```
