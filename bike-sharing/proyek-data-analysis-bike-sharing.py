@@ -94,7 +94,7 @@ plt.title("INTENSITAS JUMLAH SEWA SEPEDA HARIAN SETIAP MUSIM")
 plt.xlabel("Season")
 plt.ylabel("Rata-Rata Jumlah Sewa Sepeda Harian")
 plt.show()
-
+st.pyplot(fig)
 #Bar Chart
 
 data_tahunku = days_hours_df.groupby("yr_daily")["cnt_daily"].mean()
@@ -106,6 +106,7 @@ plt.xlabel("Season")
 plt.ylabel("Rata-Rata Jumlah Sewa Sepeda Harian")
 plt.show()
 
+st.pyplot(fig)
 #Bar Plot
 
 fig, ax = plt.subplots(figsize=(10,5))
@@ -115,6 +116,7 @@ plt.xlabel("Month")
 plt.ylabel("Jumlah Sepeda")
 plt.show()
 
+st.pyplot(fig)
 #Boxplot
 
 plt.figure(figsize=(10, 5))
@@ -124,6 +126,7 @@ plt.xlabel("Weathersit")
 plt.ylabel("Jumlah Sewa Sepeda Harian")
 plt.show()
 
+st.pyplot(fig)
 #Boxplot
 
 plt.figure(figsize=(10, 5))
