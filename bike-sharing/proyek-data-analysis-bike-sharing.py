@@ -53,39 +53,6 @@ hours_df.describe()
 #Menampilkan ringkasan dataframe days_hours_df
 days_hours_df.describe()
 
-#Cleaning Data
-#Membersihkan tabel days_df
-days_df.duplicated().sum()
-#Membersihkan tabel hours_df
-hours_df.duplicated().sum()
-#Membersihkan tabel days_hours_df
-days_hours_df.duplicated().sum()
-
-#Menghapus duplikat tabel days_df
-days_df.drop_duplicates(inplace=True)
-#Menghapus duplikat tabel hours_df
-hours_df.drop_duplicates(inplace=True)
-#Menghapus duplikat tabel days_hours_df
-days_hours_df.drop_duplicates(inplace=True)
-
-print("Jumlah duplikasi: ", days_df.duplicated().sum())
-print("Jumlah duplikasi: ", hours_df.duplicated().sum())
-print("Jumlah duplikasi: ", days_hours_df.duplicated().sum())
-
-#Missing values tabel days_df
-days_df.isna().sum()
-#Missing values tabel hours_df
-hours_df.isna().sum()
-#Missing values tabel days_hours_df
-days_hours_df.isna().sum()
-
-#inaccurate tabel days_df
-days_df.describe()
-#inaccurate tabel hours_df
-hours_df.describe()
-#inaccurate tabel days_hours_df
-days_hours_df.describe()
-
 #Exploratory Data Analysis
 days_df.sample(5)
 days_df.describe(include="all")
@@ -131,6 +98,8 @@ plt.xlabel("Season")
 plt.ylabel("Rata-Rata Jumlah Sewa Sepeda Harian")
 plt.show()
 
+st.pyplot(fig)
+
 #2.Bagaimana intensitas jumlah sewa sepeda harian setiap tahun(year)?
 #Seaborn_bar
 fig, ax = plt.subplots(figsize=(10,5))
@@ -139,6 +108,8 @@ ax.set(title='INTENSITAS JUMLAH SEWA SEPEDA PERTAHUN')
 plt.xlabel("Year")
 plt.ylabel("Jumlah Sepeda")
 plt.show()
+
+st.pyplot(fig)
 
 #3.Bagaimana intensitas jumlah sewa sepeda harian setiap bulan(month)?
 #Seaborn_bar
@@ -149,6 +120,8 @@ plt.xlabel("Month")
 plt.ylabel("Jumlah Sepeda")
 plt.show()
 
+st.pyplot(fig)
+
 #4.Bagaimana dampak cuaca(weathersit) terhadap jumlah sewa sepeda harian?
 #Seaborn_bar
 fig, ax = plt.subplots(figsize=(10,5))
@@ -157,6 +130,8 @@ ax.set(title='DAMPAK CUACA PADA JUMLAH SEWA SEPEDA HARIAN')
 plt.xlabel("Weathersit")
 plt.ylabel("Jumlah Sewa Sepeda Harian")
 plt.show()
+
+st.pyplot(fig)
 
 #5.Bagaimana perbedaan jumlah sepeda harian antara hari kerja(workingday) dan hari libur(holiday)?
 #Seaborn_boxplot
