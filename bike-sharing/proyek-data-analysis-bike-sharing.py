@@ -94,7 +94,6 @@ ax.set(title='INTENSITAS JUMLAH SEWA SEPEDA HARIAN SETIAP MUSIM')
 plt.xlabel("Season")
 plt.ylabel("Rata-Rata Jumlah Sewa Sepeda Harian")
 plt.show()
-
 st.pyplot(fig)
 
 #2.Bagaimana intensitas jumlah sewa sepeda harian setiap tahun(year)?
@@ -105,7 +104,6 @@ ax.set(title='INTENSITAS JUMLAH SEWA SEPEDA PERTAHUN')
 plt.xlabel("Year")
 plt.ylabel("Jumlah Sepeda")
 plt.show()
-
 st.pyplot(fig)
 
 #3.Bagaimana intensitas jumlah sewa sepeda harian setiap bulan(month)?
@@ -116,7 +114,6 @@ ax.set(title='INTENSITAS JUMLAH SEWA SEPEDA PERBULAN')
 plt.xlabel("Month")
 plt.ylabel("Jumlah Sepeda")
 plt.show()
-
 st.pyplot(fig)
 
 #4.Bagaimana dampak cuaca(weathersit) terhadap jumlah sewa sepeda harian?
@@ -127,7 +124,6 @@ ax.set(title='DAMPAK CUACA PADA JUMLAH SEWA SEPEDA HARIAN')
 plt.xlabel("Weathersit")
 plt.ylabel("Jumlah Sewa Sepeda Harian")
 plt.show()
-
 st.pyplot(fig)
 
 #5.Bagaimana perbedaan jumlah sepeda harian antara hari kerja(workingday) dan hari libur(holiday)?
@@ -138,7 +134,6 @@ ax.set(title='PERBEDAAN JUMLAH SEWA SEPEDA HARIAN ANTARA WORKINGDAY DAN HOLIDAY'
 plt.xlabel("Workingday")
 plt.ylabel("Jumlah Sewa Sepeda Harian")
 plt.show()
-
 st.pyplot(fig)
 
 st.caption('Copyright © Fuad Hidayat Ardiansya 2023')
