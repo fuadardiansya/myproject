@@ -25,8 +25,8 @@ days_hours_df = days_df.merge(hours_df, on='dteday', how='inner', suffixes=('_da
 print(days_hours_df.shape)
 
 #Menampilkan hasil penggabungan dataframe
-days_hours_df.loc[days_hours_df["dteday"].isnull()]
-days_hours_df.head()
+#days_hours_df.loc[days_hours_df["dteday"].isnull()]
+#days_hours_df.head()
 
 #Memeriksa dataframe days_df
 days_df.info()
@@ -51,12 +51,12 @@ days_df.describe()
 #Menampilkan ringkasan dataframe hours_df
 hours_df.describe()
 #Menampilkan ringkasan dataframe days_hours_df
-#days_hours_df.describe()
+days_hours_df.describe()
 
 #Mendefinisikan fungsi yang akan digunakan
-#def range(series):
-#   return series.max() - series.min()
-#days_hours_df.describe(include="all")
+def range(series):
+   return series.max() - series.min()
+days_hours_df.describe(include="all")
 
 days_hours_df.groupby(by="season_hourly").agg({
     "workingday_hourly": "count", #Menjumlahkan penyewa pada hari kerja berdasarkan musim
