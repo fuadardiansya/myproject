@@ -51,7 +51,7 @@ days_df.describe()
 #Menampilkan ringkasan dataframe hours_df
 hours_df.describe()
 #Menampilkan ringkasan dataframe days_hours_df
-days_hours_df.describe()
+#days_hours_df.describe()
 
 #Mendefinisikan fungsi yang akan digunakan
 #def range(series):
