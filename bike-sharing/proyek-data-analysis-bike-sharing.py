@@ -94,9 +94,8 @@ plt.title("INTENSITAS JUMLAH SEWA SEPEDA HARIAN SETIAP MUSIM")
 plt.xlabel("Season")
 plt.ylabel("Rata-Rata Jumlah Sewa Sepeda Harian")
 plt.show()
-st.pyplot(fig)
-#Bar Chart
 
+#Bar Chart
 data_tahunku = days_hours_df.groupby("yr_daily")["cnt_daily"].mean()
 jenis_tahun = ["2011","2012"]
 plt.figure(figsize=(10, 5))
@@ -106,9 +105,7 @@ plt.xlabel("Season")
 plt.ylabel("Rata-Rata Jumlah Sewa Sepeda Harian")
 plt.show()
 
-st.pyplot(fig)
 #Bar Plot
-
 fig, ax = plt.subplots(figsize=(10,5))
 sns.barplot(data=days_hours_df, x="mnth_daily", y='cnt_daily', ax=ax)
 ax.set(title='INTENSITAS JUMLAH SEWA SEPEDA PERBULAN')
@@ -116,9 +113,7 @@ plt.xlabel("Month")
 plt.ylabel("Jumlah Sepeda")
 plt.show()
 
-st.pyplot(fig)
 #Boxplot
-
 plt.figure(figsize=(10, 5))
 sns.boxplot(x="weathersit_daily", y="cnt_daily", data=days_hours_df)
 plt.title("DAMPAK CUACA PADA JUMLAH SEWA SEPEDA HARIAN")
@@ -126,7 +121,6 @@ plt.xlabel("Weathersit")
 plt.ylabel("Jumlah Sewa Sepeda Harian")
 plt.show()
 
-st.pyplot(fig)
 #Boxplot
 
 plt.figure(figsize=(10, 5))
@@ -137,5 +131,4 @@ plt.ylabel("Jumlah Sewa Sepeda Harian")
 plt.show()
 
 st.pyplot(fig)
-
 st.caption('Copyright © Fuad Hidayat Ardiansya 2023')
