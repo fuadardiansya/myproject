@@ -135,6 +135,13 @@ plt.ylabel("Jumlah Sepeda")
 plt.show()
 st.pyplot(fig)
 
+st.markdown('''
+    :rainbow[JAN, FEB, MAR, APR, MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC].''')
+kal3 = '''Berdasarkan diagram bar diatas, kondisi jumlah sewa sepeda pada bulan ke-6 dan ke-9 
+lebih banyak dibandingkan dengan bulan yang lainnya 
+'''
+st.markdown(kal3)
+
 #4.Bagaimana dampak cuaca(weathersit) terhadap jumlah sewa sepeda harian?
 st.subheader('Bagaimana dampak cuaca(weathersit) terhadap jumlah sewa sepeda harian?')
 
