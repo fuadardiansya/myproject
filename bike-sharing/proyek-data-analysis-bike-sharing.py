@@ -92,7 +92,6 @@ st.header('Dashboard Proyek Data Analysis - Bike Sharing')
 st.subheader('Bagaimana intensitas jumlah sewa sepeda harian setiap musim(season)?')
 
 fig, ax = plt.subplots(figsize=(10,5))
-colors = ["#90CAF9", "#D3D3D3", "#90CAF9", "#D3D3D3"]
 sns.barplot(data=days_hours_df, x="season_daily", y='cnt_daily', ax=ax)
 ax.set(title='INTENSITAS JUMLAH SEWA SEPEDA HARIAN SETIAP MUSIM')
 plt.xlabel("Season")
@@ -104,7 +103,6 @@ st.pyplot(fig)
 st.subheader('Bagaimana intensitas jumlah sewa sepeda harian setiap tahun(year)?')
 
 fig, ax = plt.subplots(figsize=(10,5))
-colors = ["#90CAF9", "#D3D3D3"]
 sns.barplot(data=days_hours_df, x="yr_daily", y='cnt_daily', ax=ax)
 ax.set(title='INTENSITAS JUMLAH SEWA SEPEDA PERTAHUN')
 plt.xlabel("Year")
@@ -116,7 +114,6 @@ st.pyplot(fig)
 st.subheader('Bagaimana intensitas jumlah sewa sepeda harian setiap bulan(month)?')
 
 fig, ax = plt.subplots(figsize=(10,5))
-colors = ["#90CAF9", "#D3D3D3", "#90CAF9", "#D3D3D3", "#90CAF9", "#D3D3D3", "#90CAF9", "#D3D3D3", "#90CAF9", "#D3D3D3", "#90CAF9", "#D3D3D3"]
 sns.barplot(data=days_hours_df, x="mnth_daily", y='cnt_daily', ax=ax)
 ax.set(title='INTENSITAS JUMLAH SEWA SEPEDA PERBULAN')
 plt.xlabel("Month")
@@ -128,7 +125,6 @@ st.pyplot(fig)
 st.subheader('Bagaimana dampak cuaca(weathersit) terhadap jumlah sewa sepeda harian?')
 
 fig, ax = plt.subplots(figsize=(10,5))
-colors = ["#90CAF9", "#D3D3D3", "#90CAF9"]
 sns.barplot(data=days_hours_df, x="weathersit_daily", y='cnt_daily', ax=ax)
 ax.set(title='DAMPAK CUACA PADA JUMLAH SEWA SEPEDA HARIAN')
 plt.xlabel("Weathersit")
@@ -140,7 +136,6 @@ st.pyplot(fig)
 st.subheader('Bagaimana perbedaan jumlah sepeda harian antara hari kerja(workingday) dan hari libur(holiday)?')
 
 fig, ax = plt.subplots(figsize=(10,5))
-colors = ["#90CAF9", "#D3D3D3"]
 sns.barplot(data=days_hours_df, x="workingday_daily", y='cnt_daily', ax=ax)
 ax.set(title='PERBEDAAN JUMLAH SEWA SEPEDA HARIAN ANTARA WORKINGDAY DAN HOLIDAY')
 plt.xlabel("Workingday")
