@@ -87,8 +87,6 @@ print(correlation)
 
 #Visualization & Explanatory Analysis
 st.header('Dashboard Proyek Data Analysis - Bike Sharing')
-# Menambahkan logo perusahaan
-    st.image("https://github.com/dicodingacademy/assets/raw/main/logo.png")
 
 #1.Bagaimana intensitas jumlah sewa sepeda harian setiap musim(season)?
 st.subheader('Bagaimana intensitas jumlah sewa sepeda harian setiap musim(season)?')
