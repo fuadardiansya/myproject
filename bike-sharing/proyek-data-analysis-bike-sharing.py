@@ -160,7 +160,7 @@ st.markdown('''
 st.markdown('''
     :green[3 adalah Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rain + Scattered clouds].''')
 st.markdown('''
-    :yellow[4 adalah Heavy Rain + Ice Pallets + Thunderstorm + Mist, Snow + Fog].''')
+    :blue[4 adalah Heavy Rain + Ice Pallets + Thunderstorm + Mist, Snow + Fog].''')
 
 kal4 = '''Berdasarkan diagram box plot diatas, jumlah sewa sepeda harian meningkat 
 pada 1 adalah Clear, Few clouds, Partly cloudy, Partly cloudy
