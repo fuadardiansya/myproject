@@ -46,4 +46,4 @@ if.st.button('Test Prediksi Diabetes') :
     else:
         diab_diagnosis = 'Pasien tidak terkena Diabetes'
     
-    st.success(diab_diagnosis)
+        st.success(diab_diagnosis)
