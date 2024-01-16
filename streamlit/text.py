@@ -37,6 +37,9 @@ Two (or more) newline characters in a row will result in a hard return.
 st.markdown(multi)
 
 # Code block
+code = '''def hello():
+    print("Hello, Streamlit!")'''
+st.code(code, language='python')
 
 #LaTex
 
