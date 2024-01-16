@@ -38,12 +38,12 @@ with col2 :
 diab_diagnosis = ''
 
 # Membuat tombol untuk Prediksi
-    if.st.button('Test Prediksi Diabetes') :
-        diab_prediction = diabetes_model.predict([[Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPredigreeFuncton, Age ]])
+if st.button('Test Prediksi Diabetes') :
+    diab_prediction = diabetes_model.predict([[Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPredigreeFuncton, Age ]])
 
-        if(diab_prediction[0]==1):
-            diab_diagnosis = 'Pasien terkena Diabetes'
-        else:
-            diab_diagnosis = 'Pasien tidak terkena Diabetes'
+    if (diab_prediction[0]==1):
+        diab_diagnosis = 'Pasien terkena Diabetes'
+    else:
+        diab_diagnosis = 'Pasien tidak terkena Diabetes'
     
-            st.success(diab_diagnosis)
+        st.success(diab_diagnosis)
