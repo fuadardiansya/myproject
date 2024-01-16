@@ -19,7 +19,22 @@ st.markdown("## Markdown2")
 st.markdown("### Markdown3")
 st.markdown("#### Markdown4")
 
-# Markdown multi line
+# Markdown warna
+st.markdown('''
+    :red[Streamlit] :orange[can] :green[write] :blue[text] :violet[in]
+    :gray[pretty] :rainbow[colors].''')
+
+# Markdown emoji
+st.markdown("Here's a bouquet &mdash;\
+            :tulip::cherry_blossom::rose::hibiscus::sunflower::blossom:")
+
+# Markdown multibaris
+multi = '''If you end a line with two spaces,
+a soft return is used for the next line.
+
+Two (or more) newline characters in a row will result in a hard return.
+'''
+st.markdown(multi)
 
 # Code block
 
